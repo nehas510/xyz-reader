@@ -15,14 +15,15 @@
 
             <FrameLayout
                 android:id="@+id/photo_container"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/photo_placeholder">
                 <!--suppress AndroidLintContentDescription -->
-                <ImageView
+                <com.example.xyzreader.ui.ThreeTwoImageView
                     android:id="@+id/photo"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:scaleType="centerCrop"
                      />
 
                 <View
@@ -93,9 +94,8 @@
     </com.example.xyzreader.ui.ObservableScrollView>
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/share_fab"
         android:stateListAnimator="@anim/fab_state_list_anim"
-        android:background="@drawable/add_fab_background"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:elevation="@dimen/fab_elevation"
