@@ -25,4 +25,9 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
+    <style name="transparentText" parent="@android:style/TextAppearance">
+
+        <item name="android:textColor">#00666666</item>
+
+    </style>
 </resources>
