@@ -13,7 +13,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
-import android.text.Html;
 import android.text.format.DateUtils;
 import android.util.Log;
 import android.view.View;
@@ -58,9 +57,6 @@ public class ArticleListActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_article_list);
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar_main);
-
-
-        final View toolbarContainerView = findViewById(R.id.toolbar_main);
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 
@@ -171,18 +167,18 @@ public class ArticleListActivity extends AppCompatActivity implements
             Date publishedDate = parsePublishedDate();
             if (!publishedDate.before(START_OF_EPOCH.getTime())) {
 
-                holder.subtitleView.setText(Html.fromHtml(
+                holder.subtitleView.setText(
                         DateUtils.getRelativeTimeSpanString(
                                 publishedDate.getTime(),
                                 System.currentTimeMillis(), DateUtils.HOUR_IN_MILLIS,
                                 DateUtils.FORMAT_ABBREV_ALL).toString()
-                                + "<br/>" + " by "
-                                + mCursor.getString(ArticleLoader.Query.AUTHOR)));
+                                 + " by "
+                                + mCursor.getString(ArticleLoader.Query.AUTHOR));
             } else {
-                holder.subtitleView.setText(Html.fromHtml(
+                holder.subtitleView.setText(
                         outputFormat.format(publishedDate)
-                        + "<br/>" + " by "
-                        + mCursor.getString(ArticleLoader.Query.AUTHOR)));
+                         + " by "
+                        + mCursor.getString(ArticleLoader.Query.AUTHOR));
             }
 
             Picasso.with(getApplicationContext())
