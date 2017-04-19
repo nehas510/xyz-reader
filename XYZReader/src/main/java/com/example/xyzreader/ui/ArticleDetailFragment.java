@@ -112,20 +112,12 @@ public class ArticleDetailFragment extends Fragment implements
        mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
                 mRootView.findViewById(R.id.coordinatorView);
 
-        mPhotoView = (ThreeTwoImageView) mRootView.findViewById(R.id.photo);
+        mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
         mPhotoContainerView = mRootView.findViewById(R.id.photo_container);
 
-        mStatusBarColorDrawable = new ColorDrawable(0);
+       // mStatusBarColorDrawable = new ColorDrawable(0);
 
-        mRootView.findViewById(R.id.share_fab).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(Intent.createChooser(ShareCompat.IntentBuilder.from(getActivity())
-                        .setType("text/plain")
-                        .setText("Some sample text")
-                        .getIntent(), getString(R.string.action_share)));
-            }
-        });
+
 
         bindViews();
         return mRootView;
@@ -167,7 +159,7 @@ public class ArticleDetailFragment extends Fragment implements
         bylineView.setMovementMethod(new LinkMovementMethod());
         TextView bodyView = (TextView) mRootView.findViewById(R.id.article_body);
 
-        CollapsingToolbarLayout collapsingToolbar =
+        final CollapsingToolbarLayout collapsingToolbar =
                 (CollapsingToolbarLayout) mRootView.findViewById(R.id.collapsing_toolbar);
 
 
@@ -176,8 +168,17 @@ public class ArticleDetailFragment extends Fragment implements
             mRootView.setVisibility(View.VISIBLE);
             mRootView.animate().alpha(1);
             titleView.setText(mCursor.getString(ArticleLoader.Query.TITLE));
-            collapsingToolbar.setTitle(mCursor.getString(ArticleLoader.Query.TITLE));
-            collapsingToolbar.setExpandedTitleTextAppearance(R.style.transparentText);
+            mRootView.findViewById(R.id.share_fab).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(Intent.createChooser(ShareCompat.IntentBuilder.from(getActivity())
+                            .setType("text/plain")
+                            .setText(mCursor.getString(ArticleLoader.Query.TITLE))
+                            .getIntent(), getString(R.string.action_share)));
+                }
+            });
+
+
 
             Date publishedDate = parsePublishedDate();
             if (!publishedDate.before(START_OF_EPOCH.getTime())) {
@@ -210,7 +211,12 @@ public class ArticleDetailFragment extends Fragment implements
                                 mPhotoView.setImageBitmap(imageContainer.getBitmap());
                                 mRootView.findViewById(R.id.meta_bar)
                                         .setBackgroundColor(mMutedColor);
-                              //  updateStatusBar();
+                                collapsingToolbar.setTitle(mCursor.getString(ArticleLoader.Query.TITLE));
+                                collapsingToolbar.setExpandedTitleTextAppearance(R.style.transparentText);
+                                collapsingToolbar.setContentScrimColor(mMutedColor);
+                                collapsingToolbar.setCollapsedTitleTextAppearance(R.style.colorText);
+
+
                             }
                         }
 
