@@ -1,15 +1,15 @@
 package com.example.xyzreader.ui;
 
-import android.app.Fragment;
-import android.app.LoaderManager;
 import android.content.Intent;
-import android.content.Loader;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.LoaderManager;
 import android.support.v4.app.ShareCompat;
+import android.support.v4.content.Loader;
 import android.support.v7.graphics.Palette;
 import android.text.Html;
 import android.text.format.DateUtils;
@@ -56,6 +56,11 @@ public class ArticleDetailFragment extends Fragment implements
     private boolean mIsCard = false;
     private int mStatusBarFullOpacityBottom;
 
+    TextView titleView;
+    TextView bylineView;
+    TextView bodyView;
+    CollapsingToolbarLayout collapsingToolbar;
+
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.sss");
     // Use default locale format
     private SimpleDateFormat outputFormat = new SimpleDateFormat();
@@ -85,14 +90,10 @@ public class ArticleDetailFragment extends Fragment implements
             mItemId = getArguments().getLong(ARG_ITEM_ID);
         }
 
-        mIsCard = getResources().getBoolean(R.bool.detail_is_card);
-        mStatusBarFullOpacityBottom = getResources().getDimensionPixelSize(
-                R.dimen.detail_card_top_margin);
+      //  mIsCard = getResources().getBoolean(R.bool.detail_is_card);
+     //   mStatusBarFullOpacityBottom = getResources().getDimensionPixelSize(
+             //   R.dimen.detail_card_top_margin);
         setHasOptionsMenu(true);
-    }
-
-    public ArticleDetailActivity getActivityCast() {
-        return (ArticleDetailActivity) getActivity();
     }
 
     @Override
@@ -103,14 +104,14 @@ public class ArticleDetailFragment extends Fragment implements
         // the fragment's onCreate may cause the same LoaderManager to be dealt to multiple
         // fragments because their mIndex is -1 (haven't been added to the activity yet). Thus,
         // we do this in onActivityCreated.
-        getLoaderManager().initLoader(0, null, this);
+        getLoaderManager().initLoader(0,null,this);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
        mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
-                mRootView.findViewById(R.id.coordinatorView);
+        mRootView.findViewById(R.id.coordinatorView);
 
         mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
         mPhotoContainerView = mRootView.findViewById(R.id.photo_container);
@@ -124,7 +125,7 @@ public class ArticleDetailFragment extends Fragment implements
     }
 
 
-    static float progress(float v, float min, float max) {
+  /*  static float progress(float v, float min, float max) {
         return constrain((v - min) / (max - min), 0, 1);
     }
 
@@ -137,7 +138,7 @@ public class ArticleDetailFragment extends Fragment implements
             return val;
         }
     }
-
+*/
     private Date parsePublishedDate() {
         try {
             String date = mCursor.getString(ArticleLoader.Query.PUBLISHED_DATE);
@@ -154,19 +155,22 @@ public class ArticleDetailFragment extends Fragment implements
             return;
         }
 
-        TextView titleView = (TextView) mRootView.findViewById(R.id.article_title);
-        TextView bylineView = (TextView) mRootView.findViewById(R.id.article_byline);
-        bylineView.setMovementMethod(new LinkMovementMethod());
-        TextView bodyView = (TextView) mRootView.findViewById(R.id.article_body);
+         titleView = (TextView) mRootView.findViewById(R.id.article_title);
+         bylineView = (TextView) mRootView.findViewById(R.id.article_byline);
+         bylineView.setMovementMethod(new LinkMovementMethod());
+         bodyView = (TextView) mRootView.findViewById(R.id.article_body);
+         collapsingToolbar = (CollapsingToolbarLayout) mRootView.findViewById(R.id.collapsing_toolbar);
 
-        final CollapsingToolbarLayout collapsingToolbar =
-                (CollapsingToolbarLayout) mRootView.findViewById(R.id.collapsing_toolbar);
+      setCursorData();
+            }
+
+    private void setCursorData(){
 
 
         if (mCursor != null) {
-            mRootView.setAlpha(0);
+            // mRootView.setAlpha(0);
             mRootView.setVisibility(View.VISIBLE);
-            mRootView.animate().alpha(1);
+            //   mRootView.animate().alpha(1);
             titleView.setText(mCursor.getString(ArticleLoader.Query.TITLE));
             mRootView.findViewById(R.id.share_fab).setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -182,7 +186,7 @@ public class ArticleDetailFragment extends Fragment implements
 
             Date publishedDate = parsePublishedDate();
             if (!publishedDate.before(START_OF_EPOCH.getTime())) {
-                bylineView.setText(Html.fromHtml(
+                bylineView.setText(stripHtml(
                         DateUtils.getRelativeTimeSpanString(
                                 publishedDate.getTime(),
                                 System.currentTimeMillis(), DateUtils.HOUR_IN_MILLIS,
@@ -195,11 +199,13 @@ public class ArticleDetailFragment extends Fragment implements
                 // If date is before 1902, just show the string
                 bylineView.setText(
                         outputFormat.format(publishedDate) + " by <font color='#ffffff'>"
-                        + mCursor.getString(ArticleLoader.Query.AUTHOR)
+                                + mCursor.getString(ArticleLoader.Query.AUTHOR)
                                 + "</font>");
 
             }
-            bodyView.setText(mCursor.getString(ArticleLoader.Query.BODY).replaceAll("(\r\n|\n)", "<br />"));
+            bodyView.setText(stripHtml(mCursor.getString(ArticleLoader.Query.BODY).replaceAll("(\r\n|\n)", "<br />")));
+
+
             ImageLoaderHelper.getInstance(getActivity()).getImageLoader()
                     .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
                         @Override
@@ -214,7 +220,7 @@ public class ArticleDetailFragment extends Fragment implements
                                 collapsingToolbar.setTitle(mCursor.getString(ArticleLoader.Query.TITLE));
                                 collapsingToolbar.setExpandedTitleTextAppearance(R.style.transparentText);
                                 collapsingToolbar.setContentScrimColor(mMutedColor);
-                                collapsingToolbar.setCollapsedTitleTextAppearance(R.style.colorText);
+
 
 
                             }
@@ -231,6 +237,13 @@ public class ArticleDetailFragment extends Fragment implements
             bylineView.setText("N/A" );
             bodyView.setText("N/A");
         }
+
+
+
+    }
+
+    public String stripHtml(String html) {
+        return Html.fromHtml(html).toString();
     }
 
     @Override
@@ -238,14 +251,15 @@ public class ArticleDetailFragment extends Fragment implements
         return ArticleLoader.newInstanceForItemId(getActivity(), mItemId);
     }
 
+
     @Override
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
-        if (!isAdded()) {
+      /*  if (!isAdded()) {
             if (cursor != null) {
                 cursor.close();
             }
             return;
-        }
+        }*/
 
         mCursor = cursor;
         if (mCursor != null && !mCursor.moveToFirst()) {
@@ -263,14 +277,5 @@ public class ArticleDetailFragment extends Fragment implements
         bindViews();
     }
 
-  /*  public int getUpButtonFloor() {
-        if (mPhotoContainerView == null || mPhotoView.getHeight() == 0) {
-            return Integer.MAX_VALUE;
-        }
 
-        // account for parallax
-        return mIsCard
-                ? (int) mPhotoContainerView.getTranslationY() + mPhotoView.getHeight() - mScrollY
-                : mPhotoView.getHeight() - mScrollY;
-    }*/
 }
