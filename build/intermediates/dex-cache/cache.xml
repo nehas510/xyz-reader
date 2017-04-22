@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.android/build-cache/5d854d415c74267447494833fe008667b38d8b56/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ec3360994c4007c282a4b651723603e82682b601">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6afc96f064f155ddf3e98f1d604c36aaad14ac78/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.android/build-cache/24e1e03710f20023817b2dbde1bfe32d414c7af4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d88b788abb78ed9ccc2c7a0e2da86a78a0bd14b5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.android/build-cache/8a31b14c22a642d2b8910f08952554199b469d93/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ff00e5b7f960c003db947651aab33f5883895e58/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.android/build-cache/5678a5377473568f8acee561c880da0137ea6359/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f3e11c7bddf59b54eab6e30c0e4ce448dc7117ae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_c8a5d08d3e38a21860cecfd9922e4f202e5d0ff9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.android/build-cache/d7bea61c3aa74287b4ad34f38ab4f90c7efaea03/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ac9f58f6e55334355b4ba191650e10d10077e4d1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0caf3c0f2302b4fdd3fcc8ce8d4d38000a26a2">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_33753a0af803a1ff3b999af76918581bce0491db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e8c1f895698921a61009e650185d485341987d57/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.android/build-cache/917110d0ca11158cfd59c637e71054a8ee997a86/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ae4f79e8a03fb7530ef839f1e5f5fcb1bed36225/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.android/build-cache/2e7cba2807b2a06df27fc39f2ab13d23344b43a9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a4bc10f895d7a55380fe74a0d9f9e68aef3be9de/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.android/build-cache/1e5ffc7b122d4b8b92493a0e4bae20a0c83257a6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6690a802d9c9b0105cd4c6c2a076c9e44ea77ab6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_1a1c9e94a972fdd1139a5e29d5418d93fc921593/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.1.2/7052283359001bb108753cb0583a887d3bf94c82/okhttp-3.1.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7052283359001bb108753cb0583a887d3bf94c82">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.1.2_ea0ad95dd148e1723f1af43efc4bc83c81cca9cc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.android/build-cache/b2bc898e88e69faa066c804865b7c20cccb681df/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="09adf6e61abc0fe3b2cb5b1795a7033572475fad">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a7d0936f86fff0674b17c5459bd65acf1d5fc877/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.0_2431a89a6f19575b32a1f6ce43328013ce07730a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.android/build-cache/70f33d7951dece0c7bc7cc2837292f2b4fafc379/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_975beec10ef0dcebb3673fc79e7748c3c73de663/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.android/build-cache/e72e092e1237d845dc04e89c8283c0940aa69ae6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8b5a4c0cf7571669b5b6aef1c6bf570017ca7944/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_db9b206c560003946b66c02bacd76b9cc82d54ba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.android/build-cache/673be818d26cf679a4d7df22cf3f3fdd25821d42/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8783b3ccf6418daa2c65a3d943c96526823c3ee4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/gitHub/xyz-reader/XYZReader/libs/volley.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c68094cbd011a3f9dccbfe16e77a2cf43622e277">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/2/volley_eed0063790a63bc4365d20f78d7635a9108d2bbb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.android/build-cache/5668be534e0bad8c414f76af9474a02d281ba35f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_60c5981b8c7ec9503e4e4eb06bf0844771939283/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/neha/.android/build-cache/16b2fea6a9534547dbf9eb5872ca23f47351361d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c3df22655ca85222f965dcc650b0254476eaa9d3/classes.dex" />
+    </item>
+
+</items>

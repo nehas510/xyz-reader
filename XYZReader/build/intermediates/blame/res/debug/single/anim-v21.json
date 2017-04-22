@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/anim-v21/fab_state_list_anim.xml",
+        "source": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/anim-v21/fab_state_list_anim.xml"
+    },
+    {
+        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/neha/.android/build-cache/e72e092e1237d845dc04e89c8283c0940aa69ae6/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/neha/.android/build-cache/e72e092e1237d845dc04e89c8283c0940aa69ae6/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    }
+]

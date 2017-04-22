@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_arrow_back.png",
+        "source": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/drawable-xxhdpi/ic_arrow_back.png"
+    },
+    {
+        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/drawable-xxhdpi/logo.png",
+        "source": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/drawable-xxhdpi/logo.png"
+    },
+    {
+        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_share.png",
+        "source": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/drawable-xxhdpi/ic_share.png"
+    },
+    {
+        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/drawable-xxhdpi/news_letters.png",
+        "source": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/drawable-xxhdpi/news_letters.png"
+    }
+]

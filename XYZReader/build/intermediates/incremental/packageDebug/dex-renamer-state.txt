@@ -1,0 +1,7 @@
+#Sat Apr 22 16:01:08 GST 2017
+base.0=/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_db9b206c560003946b66c02bacd76b9cc82d54ba
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_33753a0af803a1ff3b999af76918581bce0491db/classes.dex
+base.1=/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_33753a0af803a1ff3b999af76918581bce0491db
+file.0=/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_db9b206c560003946b66c02bacd76b9cc82d54ba/classes.dex
