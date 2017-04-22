@@ -11,14 +11,7 @@
                     "endOffset": 120
                 },
                 "from": {
-                    "file": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/values-land/values-land.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 69,
-                        "endOffset": 120
-                    }
+                    "file": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/values-land/values-land.xml"
                 }
             },
             {
@@ -30,14 +23,7 @@
                     "endOffset": 184
                 },
                 "from": {
-                    "file": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/values-land/values-land.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 125,
-                        "endColumn": 63,
-                        "endOffset": 184
-                    }
+                    "file": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/values-land/values-land.xml"
                 }
             },
             {
@@ -49,14 +35,7 @@
                     "endOffset": 255
                 },
                 "from": {
-                    "file": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/values-land/values-land.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 189,
-                        "endColumn": 70,
-                        "endOffset": 255
-                    }
+                    "file": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/values-land/values-land.xml"
                 }
             },
             {
@@ -68,14 +47,7 @@
                     "endOffset": 323
                 },
                 "from": {
-                    "file": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/values-land/values-land.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 260,
-                        "endColumn": 67,
-                        "endOffset": 323
-                    }
+                    "file": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/values-land/values-land.xml"
                 }
             },
             {
@@ -87,14 +59,7 @@
                     "endOffset": 381
                 },
                 "from": {
-                    "file": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/values-land/macro_layout.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 88,
-                        "endColumn": 57,
-                        "endOffset": 141
-                    }
+                    "file": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/values-land/macro_layout.xml"
                 }
             },
             {
@@ -106,14 +71,7 @@
                     "endOffset": 433
                 },
                 "from": {
-                    "file": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/values-land/macro_layout.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 36,
-                        "endColumn": 51,
-                        "endOffset": 83
-                    }
+                    "file": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/values-land/macro_layout.xml"
                 }
             },
             {
@@ -121,20 +79,69 @@
                     "startLine": 8,
                     "startColumn": 4,
                     "startOffset": 438,
-                    "endLine": 11,
-                    "endColumn": 12,
-                    "endOffset": 615
+                    "endColumn": 42,
+                    "endOffset": 476
                 },
                 "from": {
-                    "file": "/Users/neha/.android/build-cache/e72e092e1237d845dc04e89c8283c0940aa69ae6/output/res/values-land/values-land.xml",
+                    "file": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/values-land/dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 149,
+                        "endColumn": 42,
+                        "endOffset": 187
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 481,
+                    "endColumn": 50,
+                    "endOffset": 527
+                },
+                "from": {
+                    "file": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/values-land/dimens.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
                         "startOffset": 55,
-                        "endLine": 5,
-                        "endColumn": 12,
-                        "endOffset": 232
+                        "endColumn": 50,
+                        "endOffset": 101
                     }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 532,
+                    "endColumn": 42,
+                    "endOffset": 570
+                },
+                "from": {
+                    "file": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/values-land/dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 106,
+                        "endColumn": 42,
+                        "endOffset": 144
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 575,
+                    "endLine": 14,
+                    "endColumn": 12,
+                    "endOffset": 752
+                },
+                "from": {
+                    "file": "/Users/neha/.android/build-cache/e72e092e1237d845dc04e89c8283c0940aa69ae6/output/res/values-land/values-land.xml"
                 }
             }
         ]

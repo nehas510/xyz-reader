@@ -109,7 +109,7 @@ public class ArticleDetailActivity extends AppCompatActivity
             mStartId = 0;
         }
     }
-    
+
     @Override
     public void onLoaderReset(Loader<Cursor> cursorLoader) {
         mCursor = null;

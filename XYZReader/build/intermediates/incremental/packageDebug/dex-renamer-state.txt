@@ -1,4 +1,4 @@
-#Sat Apr 22 19:19:30 GST 2017
+#Sat Apr 22 20:24:34 GST 2017
 base.0=/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_db9b206c560003946b66c02bacd76b9cc82d54ba
 renamed.1=classes2.dex
 renamed.0=classes.dex

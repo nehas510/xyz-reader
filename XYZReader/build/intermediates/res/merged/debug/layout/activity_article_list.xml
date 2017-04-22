@@ -7,21 +7,20 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="256dp"
-        android:background="#212121"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_height="@dimen/app_bar_height"
+        style="@style/Theme.Bacon"
         android:fitsSystemWindows="true">
 
     <android.support.design.widget.CollapsingToolbarLayout
+        style="@style/Theme.Bacon"
         android:id="@+id/collapsing_toolbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#212121"
         app:layout_scrollFlags="scroll|exitUntilCollapsed"
         android:fitsSystemWindows="true"
         app:contentScrim="?attr/colorPrimary"
-        app:expandedTitleMarginStart="48dp"
-        app:expandedTitleMarginEnd="64dp">
+        app:expandedTitleMarginStart="@dimen/collapsing_toolbar_margin_start"
+        app:expandedTitleMarginEnd="@dimen/collapsing_toolbar_margin_end">
 
         <ImageView
             android:id="@+id/background"
@@ -35,22 +34,23 @@
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar_main"
-            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+
+            android:layout_gravity="bottom"
             android:layout_marginLeft="@dimen/list_toolbar_side_margin"
             android:layout_marginRight="@dimen/list_toolbar_side_margin"
-            android:background="#212121"
-
-            app:layout_scrollFlags="scroll|enterAlways"
-            android:layout_width="match_parent"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:theme="@style/Theme.Bacon"
             app:layout_collapseMode="pin"
-            android:layout_height="?actionBarSize"
-            android:layout_gravity="bottom">
+            app:layout_scrollFlags="scroll|enterAlways">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/logo"
-                android:contentDescription="@string/app_name" />
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/logo" />
 
         </android.support.v7.widget.Toolbar>
 
@@ -61,7 +61,7 @@
     android:id="@+id/swipe_refresh_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#212121"
+    style="@style/Theme.Bacon"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     >
 
