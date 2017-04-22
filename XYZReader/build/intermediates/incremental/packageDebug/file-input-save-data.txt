@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Apr 22 20:43:47 GST 2017
+#Sat Apr 22 21:38:44 GST 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/resources-debug.ap_/res/color-v23/abc_tint_edittext.xml

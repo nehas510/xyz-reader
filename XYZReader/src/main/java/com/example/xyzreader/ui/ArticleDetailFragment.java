@@ -49,14 +49,8 @@ public class ArticleDetailFragment extends Fragment implements
     private View mRootView;
     private int mMutedColor = 0xFF333333;
 
-    private ColorDrawable mStatusBarColorDrawable;
-
     private View mPhotoContainerView;
     private ImageView mPhotoView;
-    private int mScrollY;
-    private boolean mIsCard = false;
-    private int mStatusBarFullOpacityBottom;
-
     TextView titleView;
     TextView bylineView;
     TextView bodyView;
@@ -91,9 +85,6 @@ public class ArticleDetailFragment extends Fragment implements
             mItemId = getArguments().getLong(ARG_ITEM_ID);
         }
 
-      //  mIsCard = getResources().getBoolean(R.bool.detail_is_card);
-     //   mStatusBarFullOpacityBottom = getResources().getDimensionPixelSize(
-             //   R.dimen.detail_card_top_margin);
         setHasOptionsMenu(true);
     }
 
@@ -101,10 +92,6 @@ public class ArticleDetailFragment extends Fragment implements
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        // In support library r8, calling initLoader for a fragment in a FragmentPagerAdapter in
-        // the fragment's onCreate may cause the same LoaderManager to be dealt to multiple
-        // fragments because their mIndex is -1 (haven't been added to the activity yet). Thus,
-        // we do this in onActivityCreated.
         getLoaderManager().initLoader(0,null,this);
     }
 
@@ -116,30 +103,9 @@ public class ArticleDetailFragment extends Fragment implements
 
         mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
         mPhotoContainerView = mRootView.findViewById(R.id.photo_container);
-
-       // mStatusBarColorDrawable = new ColorDrawable(0);
-
-
-
         bindViews();
         return mRootView;
     }
-
-
-  /*  static float progress(float v, float min, float max) {
-        return constrain((v - min) / (max - min), 0, 1);
-    }
-
-    static float constrain(float val, float min, float max) {
-        if (val < min) {
-            return min;
-        } else if (val > max) {
-            return max;
-        } else {
-            return val;
-        }
-    }
-*/
     private Date parsePublishedDate() {
         try {
             String date = mCursor.getString(ArticleLoader.Query.PUBLISHED_DATE);
@@ -169,9 +135,9 @@ public class ArticleDetailFragment extends Fragment implements
 
 
         if (mCursor != null) {
-            // mRootView.setAlpha(0);
+             mRootView.setAlpha(0);
             mRootView.setVisibility(View.VISIBLE);
-            //   mRootView.animate().alpha(1);
+               mRootView.animate().alpha(1);
             titleView.setText(mCursor.getString(ArticleLoader.Query.TITLE));
             mRootView.findViewById(R.id.share_fab).setOnClickListener(new View.OnClickListener() {
                 @Override

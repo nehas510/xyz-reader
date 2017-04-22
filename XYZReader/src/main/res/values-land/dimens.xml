@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_land_height">100dp</dimen>
+    <dimen name="padding_land">8dp</dimen>
+    <dimen name="fab_land_hw">56dp</dimen>
+</resources>
