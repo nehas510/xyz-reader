@@ -103,16 +103,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-android:paddingTop="@dimen/detail_metabar_vert_padding">
+    style="@style/Theme.Bacon"
+    android:paddingTop="@dimen/detail_metabar_vert_padding">
     >
 
     <TextView
         android:id="@+id/article_body"
-        style="@style/Theme.Bacon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginLeft="@dimen/detail_body_bottom_margin"
+        android:layout_marginRight="@dimen/detail_body_bottom_margin"
         android:paddingBottom="@dimen/detail_body_bottom_margin"
         android:textAlignment="textStart"
         android:textSize="18sp" />

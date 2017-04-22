@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout-land/activity_article_list.xml",
+        "source": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/layout-land/activity_article_list.xml"
+    },
+    {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout-land/fragment_article_detail.xml",
         "source": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/layout-land/fragment_article_detail.xml"
     }
