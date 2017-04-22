@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.app.ShareCompat;
@@ -175,6 +176,9 @@ public class ArticleDetailFragment extends Fragment implements
             mRootView.findViewById(R.id.share_fab).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    Snackbar snackbar = Snackbar
+                            .make(mRootView, "Share with your friends", Snackbar.LENGTH_LONG);
+                    snackbar.show();
                     startActivity(Intent.createChooser(ShareCompat.IntentBuilder.from(getActivity())
                             .setType("text/plain")
                             .setText(mCursor.getString(ArticleLoader.Query.TITLE))
