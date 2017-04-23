@@ -103,7 +103,7 @@ public class ArticleDetailFragment extends Fragment implements
 
         mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
         mPhotoContainerView = mRootView.findViewById(R.id.photo_container);
-        bindViews();
+       // bindViews();
         return mRootView;
     }
     private Date parsePublishedDate() {
@@ -135,9 +135,9 @@ public class ArticleDetailFragment extends Fragment implements
 
 
         if (mCursor != null) {
-             mRootView.setAlpha(0);
+          //   mRootView.setAlpha(0);
             mRootView.setVisibility(View.VISIBLE);
-               mRootView.animate().alpha(1);
+             //  mRootView.animate().alpha(1);
             titleView.setText(mCursor.getString(ArticleLoader.Query.TITLE));
             mRootView.findViewById(R.id.share_fab).setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -174,7 +174,6 @@ public class ArticleDetailFragment extends Fragment implements
 
             }
             bodyView.setText(stripHtml(mCursor.getString(ArticleLoader.Query.BODY).replaceAll("(\r\n|\n)", "<br />")));
-
 
             ImageLoaderHelper.getInstance(getActivity()).getImageLoader()
                     .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
@@ -224,12 +223,12 @@ public class ArticleDetailFragment extends Fragment implements
 
     @Override
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
-      /*  if (!isAdded()) {
+        if (!isAdded()) {
             if (cursor != null) {
                 cursor.close();
             }
             return;
-        }*/
+        }
 
         mCursor = cursor;
         if (mCursor != null && !mCursor.moveToFirst()) {

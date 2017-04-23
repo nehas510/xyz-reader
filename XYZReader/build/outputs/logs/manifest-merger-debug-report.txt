@@ -52,7 +52,7 @@ MERGED from [com.android.support:cardview-v7:25.3.0] /Users/neha/.android/build-
 	android:icon
 		ADDED from /Users/neha/gitHub/xyz-reader/XYZReader/src/main/AndroidManifest.xml:13:9-43
 	android:theme
-		ADDED from /Users/neha/gitHub/xyz-reader/XYZReader/src/main/AndroidManifest.xml:15:9-43
+		ADDED from /Users/neha/gitHub/xyz-reader/XYZReader/src/main/AndroidManifest.xml:15:9-59
 activity#com.example.xyzreader.ui.ArticleListActivity
 ADDED from /Users/neha/gitHub/xyz-reader/XYZReader/src/main/AndroidManifest.xml:17:9-24:20
 	android:label

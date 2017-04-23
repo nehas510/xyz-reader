@@ -192,8 +192,9 @@ public class ArticleListActivity extends AppCompatActivity implements
 
             Picasso.with(getApplicationContext())
                     .load( mCursor.getString(ArticleLoader.Query.THUMB_URL))
-                  .fit()
-                    .into(holder.thumbnailView);
+                    .fit()
+                    .into(holder.thumbnailView)
+                    ;
             ImageLoaderHelper.getInstance(getApplicationContext()).getImageLoader()
                     .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
                         @Override

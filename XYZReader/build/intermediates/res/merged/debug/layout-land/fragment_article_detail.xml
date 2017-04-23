@@ -82,7 +82,6 @@
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
-                style="@style/Theme.Bacon"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:gravity="center_vertical|center_horizontal"
@@ -100,13 +99,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    style="@style/Theme.Bacon"
-    android:paddingTop="@dimen/detail_metabar_vert_padding">
-    >
 
     <TextView
         android:id="@+id/article_body"
@@ -115,10 +107,9 @@
         android:layout_marginLeft="@dimen/detail_body_bottom_margin_land"
         android:layout_marginRight="@dimen/detail_body_bottom_margin_land"
         android:paddingBottom="@dimen/detail_body_bottom_margin"
+        android:paddingTop="@dimen/detail_metabar_vert_padding"
         android:textAlignment="textStart"
         android:textSize="@dimen/detail_body_text_size" />
-
-</LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
 
