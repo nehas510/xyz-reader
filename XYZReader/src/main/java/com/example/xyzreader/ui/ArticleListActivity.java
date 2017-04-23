@@ -47,7 +47,6 @@ public class ArticleListActivity extends AppCompatActivity implements
         LoaderManager.LoaderCallbacks<Cursor> {
 
     private static final String TAG = ArticleListActivity.class.toString();
-    private Toolbar mToolbar;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
     private int mMutedColor = 0xFF333333;
@@ -61,9 +60,6 @@ public class ArticleListActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
-
-        mToolbar = (Toolbar) findViewById(R.id.toolbar_main);
-
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -198,14 +194,20 @@ public class ArticleListActivity extends AppCompatActivity implements
             ImageLoaderHelper.getInstance(getApplicationContext()).getImageLoader()
                     .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
                         @Override
-                        public void onResponse(ImageLoader.ImageContainer imageContainer, boolean b) {
-                            Bitmap bitmap = imageContainer.getBitmap();
+                        public void onResponse(final ImageLoader.ImageContainer imageContainer, boolean b) {
+                            final Bitmap bitmap = imageContainer.getBitmap();
                             if (bitmap != null) {
-                                Palette p = Palette.generate(bitmap, 12);
-                                mMutedColor = p.getDarkMutedColor(0xFF333333);
-                                holder.thumbnailView.setImageBitmap(imageContainer.getBitmap());
-                                holder.cardView.setBackgroundColor(mMutedColor);
-                                //  updateStatusBar();
+
+                                Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
+                                    @Override
+                                    public void onGenerated(Palette palette) {
+                                        mMutedColor = palette.getDarkMutedColor(0xFF333333);
+                                        holder.thumbnailView.setImageBitmap(imageContainer.getBitmap());
+                                        holder.cardView.setBackgroundColor(mMutedColor);
+                                    }
+                                });
+
+
                             }
                         }
 

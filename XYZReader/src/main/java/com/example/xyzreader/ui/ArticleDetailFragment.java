@@ -3,7 +3,6 @@ package com.example.xyzreader.ui;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.Snackbar;
@@ -43,12 +42,10 @@ public class ArticleDetailFragment extends Fragment implements
 
     public static final String ARG_ITEM_ID = "item_id";
     private static final float PARALLAX_FACTOR = 1.25f;
-
     private Cursor mCursor;
     private long mItemId;
     private View mRootView;
     private int mMutedColor = 0xFF333333;
-
     private View mPhotoContainerView;
     private ImageView mPhotoView;
     TextView titleView;
@@ -91,7 +88,6 @@ public class ArticleDetailFragment extends Fragment implements
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
         getLoaderManager().initLoader(0,null,this);
     }
 
@@ -100,10 +96,8 @@ public class ArticleDetailFragment extends Fragment implements
             Bundle savedInstanceState) {
        mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
         mRootView.findViewById(R.id.coordinatorView);
-
         mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
         mPhotoContainerView = mRootView.findViewById(R.id.photo_container);
-       // bindViews();
         return mRootView;
     }
     private Date parsePublishedDate() {
@@ -135,9 +129,7 @@ public class ArticleDetailFragment extends Fragment implements
 
 
         if (mCursor != null) {
-          //   mRootView.setAlpha(0);
             mRootView.setVisibility(View.VISIBLE);
-             //  mRootView.animate().alpha(1);
             titleView.setText(mCursor.getString(ArticleLoader.Query.TITLE));
             mRootView.findViewById(R.id.share_fab).setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -178,23 +170,28 @@ public class ArticleDetailFragment extends Fragment implements
             ImageLoaderHelper.getInstance(getActivity()).getImageLoader()
                     .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
                         @Override
-                        public void onResponse(ImageLoader.ImageContainer imageContainer, boolean b) {
+                        public void onResponse(final ImageLoader.ImageContainer imageContainer, boolean b) {
                             Bitmap bitmap = imageContainer.getBitmap();
                             if (bitmap != null) {
-                                Palette p = Palette.generate(bitmap, 12);
-                                mMutedColor = p.getDarkMutedColor(0xFF333333);
-                                mPhotoView.setImageBitmap(imageContainer.getBitmap());
-                                mRootView.findViewById(R.id.meta_bar)
-                                        .setBackgroundColor(mMutedColor);
-                                collapsingToolbar.setTitle(mCursor.getString(ArticleLoader.Query.TITLE));
-                                collapsingToolbar.setExpandedTitleTextAppearance(R.style.transparentText);
-                                collapsingToolbar.setContentScrimColor(mMutedColor);
 
+                                Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
+                                    @Override
+                                    public void onGenerated(Palette palette) {
+                                        mMutedColor = palette.getDarkMutedColor(0xFF333333);
+                                        mPhotoView.setImageBitmap(imageContainer.getBitmap());
+                                        mRootView.findViewById(R.id.meta_bar)
+                                                .setBackgroundColor(mMutedColor);
+                                        collapsingToolbar.setTitle(mCursor.getString(ArticleLoader.Query.TITLE));
+                                        collapsingToolbar.setExpandedTitleTextAppearance(R.style.transparentText);
+                                        collapsingToolbar.setContentScrimColor(mMutedColor);
+
+
+                                    }
+                                });
 
 
                             }
                         }
-
                         @Override
                         public void onErrorResponse(VolleyError volleyError) {
 
