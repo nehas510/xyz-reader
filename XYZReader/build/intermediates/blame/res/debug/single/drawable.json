@@ -48,10 +48,6 @@
         "source": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/drawable/photo_background_protection.xml"
     },
     {
-        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/drawable/design_password_eye.xml",
-        "source": "/Users/neha/.android/build-cache/e72e092e1237d845dc04e89c8283c0940aa69ae6/output/res/drawable/design_password_eye.xml"
-    },
-    {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
         "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
     },
@@ -66,10 +62,6 @@
     {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
         "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/drawable/abc_ratingbar_small_material.xml"
-    },
-    {
-        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
-        "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/drawable/abc_btn_colored_material.xml"
     },
     {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
@@ -100,10 +92,6 @@
         "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/drawable/abc_ic_search_api_material.xml"
     },
     {
-        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/drawable/white_selectable_item_background_circle.xml",
-        "source": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/drawable/white_selectable_item_background_circle.xml"
-    },
-    {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
         "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
@@ -128,16 +116,8 @@
         "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/drawable/design_bottom_navigation_item_background.xml",
-        "source": "/Users/neha/.android/build-cache/e72e092e1237d845dc04e89c8283c0940aa69ae6/output/res/drawable/design_bottom_navigation_item_background.xml"
-    },
-    {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
         "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/drawable/abc_tab_indicator_material.xml"
-    },
-    {
-        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
-        "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/drawable/abc_edit_text_material.xml"
     },
     {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",

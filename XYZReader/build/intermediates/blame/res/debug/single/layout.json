@@ -24,28 +24,24 @@
         "source": "/Users/neha/.android/build-cache/e72e092e1237d845dc04e89c8283c0940aa69ae6/output/res/layout/design_layout_tab_icon.xml"
     },
     {
-        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/activity_article_detail.xml",
-        "source": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/layout/activity_article_detail.xml"
-    },
-    {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
         "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/activity_article_detail.xml",
+        "source": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/layout/activity_article_detail.xml"
     },
     {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
         "source": "/Users/neha/.android/build-cache/e72e092e1237d845dc04e89c8283c0940aa69ae6/output/res/layout/design_menu_item_action_area.xml"
     },
     {
-        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
-        "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/layout/notification_action_tombstone.xml"
+        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/layout/abc_dialog_title_material.xml"
     },
     {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
         "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/layout/abc_alert_dialog_title_material.xml"
-    },
-    {
-        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/layout/abc_dialog_title_material.xml"
     },
     {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
@@ -84,10 +80,6 @@
         "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/fragment_article_detail.xml",
-        "source": "/Users/neha/gitHub/xyz-reader/XYZReader/src/main/res/layout/fragment_article_detail.xml"
-    },
-    {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
         "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/layout/abc_list_menu_item_checkbox.xml"
     },
@@ -110,10 +102,6 @@
     {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
         "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/layout/abc_list_menu_item_radio.xml"
-    },
-    {
-        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
-        "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/layout/notification_template_icon_group.xml"
     },
     {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
@@ -174,10 +162,6 @@
     {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
         "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/layout/abc_action_bar_title_item.xml"
-    },
-    {
-        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/notification_action.xml",
-        "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/layout/notification_action.xml"
     },
     {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",

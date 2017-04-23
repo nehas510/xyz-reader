@@ -170,6 +170,9 @@ public class ArticleListActivity extends AppCompatActivity implements
             mCursor.moveToPosition(position);
             holder.titleView.setText(mCursor.getString(ArticleLoader.Query.TITLE));
             Date publishedDate = parsePublishedDate();
+
+
+
             if (!publishedDate.before(START_OF_EPOCH.getTime())) {
 
                 holder.subtitleView.setText(
@@ -185,30 +188,31 @@ public class ArticleListActivity extends AppCompatActivity implements
                          + " by "
                         + mCursor.getString(ArticleLoader.Query.AUTHOR));
             }
-
             Picasso.with(getApplicationContext())
                     .load( mCursor.getString(ArticleLoader.Query.THUMB_URL))
                     .fit()
-                    .into(holder.thumbnailView)
-                    ;
+                    .into(holder.thumbnailView);
             ImageLoaderHelper.getInstance(getApplicationContext()).getImageLoader()
                     .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
                         @Override
                         public void onResponse(final ImageLoader.ImageContainer imageContainer, boolean b) {
-                            final Bitmap bitmap = imageContainer.getBitmap();
+                            Bitmap bitmap = imageContainer.getBitmap();
                             if (bitmap != null) {
-
-                                Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
+                                final Palette.Builder p = new Palette.Builder(bitmap);
+                                p.maximumColorCount(12);
+                                p.generate(new Palette.PaletteAsyncListener() {
                                     @Override
                                     public void onGenerated(Palette palette) {
                                         mMutedColor = palette.getDarkMutedColor(0xFF333333);
-                                        holder.thumbnailView.setImageBitmap(imageContainer.getBitmap());
                                         holder.cardView.setBackgroundColor(mMutedColor);
+
                                     }
                                 });
 
+                                holder.thumbnailView.setImageBitmap(imageContainer.getBitmap());
 
-                            }
+                                        }
+
                         }
 
                         @Override

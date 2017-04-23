@@ -31,6 +31,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+import static android.text.Html.FROM_HTML_MODE_LEGACY;
+
+
 /**
  * A fragment representing a single Article detail screen. This fragment is
  * either contained in a {@link ArticleListActivity} in two-pane mode (on
@@ -174,7 +177,11 @@ public class ArticleDetailFragment extends Fragment implements
                             Bitmap bitmap = imageContainer.getBitmap();
                             if (bitmap != null) {
 
-                                Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
+
+                                Palette.Builder p = new Palette.Builder(bitmap);
+
+                                p.maximumColorCount(12);
+                                p.generate(new Palette.PaletteAsyncListener() {
                                     @Override
                                     public void onGenerated(Palette palette) {
                                         mMutedColor = palette.getDarkMutedColor(0xFF333333);
@@ -188,7 +195,6 @@ public class ArticleDetailFragment extends Fragment implements
 
                                     }
                                 });
-
 
                             }
                         }
@@ -209,7 +215,7 @@ public class ArticleDetailFragment extends Fragment implements
     }
 
     public String stripHtml(String html) {
-        return Html.fromHtml(html).toString();
+        return Html.fromHtml(html,FROM_HTML_MODE_LEGACY).toString();
     }
 
     @Override

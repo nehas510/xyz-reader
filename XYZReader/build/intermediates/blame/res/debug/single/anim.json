@@ -8,10 +8,6 @@
         "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/anim/abc_fade_in.xml"
     },
     {
-        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
-        "source": "/Users/neha/.android/build-cache/e72e092e1237d845dc04e89c8283c0940aa69ae6/output/res/anim/design_bottom_sheet_slide_out.xml"
-    },
-    {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
         "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/anim/abc_slide_in_top.xml"
     },
@@ -34,10 +30,6 @@
     {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
         "source": "/Users/neha/.android/build-cache/88dacbe8bcdbd1c71c2cbf6b3e50bfc06f8623c4/output/res/anim/abc_fade_out.xml"
-    },
-    {
-        "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
-        "source": "/Users/neha/.android/build-cache/e72e092e1237d845dc04e89c8283c0940aa69ae6/output/res/anim/design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
