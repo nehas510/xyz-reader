@@ -1,4 +1,4 @@
-#Mon Apr 24 14:08:50 GST 2017
+#Mon Apr 24 16:13:11 GST 2017
 file.2=/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ac9f58f6e55334355b4ba191650e10d10077e4d1/classes.dex
 base.2=/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ac9f58f6e55334355b4ba191650e10d10077e4d1
 file.1=/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a7d0936f86fff0674b17c5459bd65acf1d5fc877/classes.dex
