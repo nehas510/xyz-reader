@@ -115,16 +115,15 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/share_fab"
-        android:stateListAnimator="@anim/fab_state_list_anim"
         android:layout_width="@dimen/fab_land_hw"
         android:layout_height="@dimen/fab_land_hw"
-        android:elevation="@dimen/fab_elevation"
+        app:elevation="@dimen/fab_elevation"
         android:contentDescription="@string/action_share"
         android:layout_gravity="bottom|end"
         android:layout_marginRight="@dimen/fab_margin"
         android:layout_marginBottom="@dimen/fab_margin"
         android:src="@drawable/ic_share"
-        android:translationZ="@dimen/fab_press_translation_z"
+        app:pressedTranslationZ="@dimen/fab_press_translation_z"
         />
 
 

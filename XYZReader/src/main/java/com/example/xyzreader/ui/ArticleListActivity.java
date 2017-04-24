@@ -171,7 +171,7 @@ public class ArticleListActivity extends AppCompatActivity implements
             holder.titleView.setText(mCursor.getString(ArticleLoader.Query.TITLE));
             Date publishedDate = parsePublishedDate();
 
-
+            holder.thumbnailView.setAspectRatio(mCursor.getFloat(ArticleLoader.Query.ASPECT_RATIO));
 
             if (!publishedDate.before(START_OF_EPOCH.getTime())) {
 
@@ -188,10 +188,8 @@ public class ArticleListActivity extends AppCompatActivity implements
                          + " by "
                         + mCursor.getString(ArticleLoader.Query.AUTHOR));
             }
-            Picasso.with(getApplicationContext())
-                    .load( mCursor.getString(ArticleLoader.Query.THUMB_URL))
-                    .fit()
-                    .into(holder.thumbnailView);
+
+
             ImageLoaderHelper.getInstance(getApplicationContext()).getImageLoader()
                     .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
                         @Override
@@ -205,11 +203,15 @@ public class ArticleListActivity extends AppCompatActivity implements
                                     public void onGenerated(Palette palette) {
                                         mMutedColor = palette.getDarkMutedColor(0xFF333333);
                                         holder.cardView.setBackgroundColor(mMutedColor);
-
                                     }
                                 });
 
+                                holder.thumbnailView.setImageUrl(
+                                        mCursor.getString(ArticleLoader.Query.THUMB_URL),
+                                        ImageLoaderHelper.getInstance(ArticleListActivity.this).getImageLoader());
+
                                 holder.thumbnailView.setImageBitmap(imageContainer.getBitmap());
+
 
                                         }
 
@@ -230,14 +232,14 @@ public class ArticleListActivity extends AppCompatActivity implements
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public ImageView thumbnailView;
+        public DynamicHeightNetworkImageView thumbnailView;
         public TextView titleView;
         public TextView subtitleView;
        public LinearLayout cardView;
 
         public ViewHolder(View view) {
             super(view);
-            thumbnailView = (ImageView) view.findViewById(R.id.thumbnail);
+            thumbnailView = (DynamicHeightNetworkImageView) view.findViewById(R.id.thumbnail);
             titleView = (TextView) view.findViewById(R.id.article_title);
             subtitleView = (TextView) view.findViewById(R.id.article_subtitle);
             cardView = (LinearLayout) view.findViewById(R.id.card_layout);
