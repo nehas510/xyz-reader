@@ -13,8 +13,7 @@
         android:elevation="@dimen/app_bar_elevation"
         android:fitsSystemWindows="true"
         android:layout_height="@dimen/app_bar_height"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-      >
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar"
@@ -44,7 +43,6 @@
                     android:fitsSystemWindows="true"
                     android:scaleType="centerCrop"
                     />
-
                 <LinearLayout
                     android:id="@+id/meta_bar"
                     android:layout_width="match_parent"
@@ -88,14 +86,10 @@
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
-
-
-
     <android.support.v4.widget.NestedScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
 
     <TextView
 
@@ -119,9 +113,9 @@
         android:layout_marginBottom="@dimen/fab_margin"
         android:layout_marginRight="@dimen/fab_margin"
         android:contentDescription="@string/action_share"
-        android:elevation="@dimen/fab_elevation"
+        app:elevation="@dimen/fab_elevation"
         android:src="@drawable/ic_share"
-        android:translationZ="@dimen/fab_press_translation_z" />
+        app:pressedTranslationZ="@dimen/fab_press_translation_z" />
 
 
 </android.support.design.widget.CoordinatorLayout>

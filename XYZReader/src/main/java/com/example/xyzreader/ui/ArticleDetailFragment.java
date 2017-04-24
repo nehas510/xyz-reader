@@ -176,10 +176,7 @@ public class ArticleDetailFragment extends Fragment implements
                         public void onResponse(final ImageLoader.ImageContainer imageContainer, boolean b) {
                             Bitmap bitmap = imageContainer.getBitmap();
                             if (bitmap != null) {
-
-
                                 Palette.Builder p = new Palette.Builder(bitmap);
-
                                 p.maximumColorCount(12);
                                 p.generate(new Palette.PaletteAsyncListener() {
                                     @Override
@@ -191,11 +188,8 @@ public class ArticleDetailFragment extends Fragment implements
                                         collapsingToolbar.setTitle(mCursor.getString(ArticleLoader.Query.TITLE));
                                         collapsingToolbar.setExpandedTitleTextAppearance(R.style.transparentText);
                                         collapsingToolbar.setContentScrimColor(mMutedColor);
-
-
                                     }
                                 });
-
                             }
                         }
                         @Override
