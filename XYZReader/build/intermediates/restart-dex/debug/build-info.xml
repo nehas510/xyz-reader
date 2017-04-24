@@ -6,49 +6,49 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.1"
-    timestamp="1493025362268"
+    timestamp="1493028304737"
     token="8348171839430507064"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="594" />
+        duration="380" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="199" />
+        duration="181" />
     <task
         name="verifier"
-        duration="28" />
+        duration="31" />
 
     <artifact
         location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/dep/dependencies.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_0.apk"
         type="SPLIT" />
     <artifact
         location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_1.apk"
         type="SPLIT" />
     <artifact
         location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_5.apk"
         type="SPLIT" />
     <artifact
         location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_3.apk"
         type="SPLIT" />
     <artifact
         location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_8.apk"
@@ -62,34 +62,34 @@
 
     <build
         build-mode="FULL"
-        timestamp="1493025362268"
+        timestamp="1493028304737"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
             location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
             location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
             location="/Users/neha/gitHub/xyz-reader/XYZReader/build/intermediates/split-apk/debug/slices/slice_8.apk"
