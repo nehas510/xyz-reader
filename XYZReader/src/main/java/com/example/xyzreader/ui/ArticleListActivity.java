@@ -189,6 +189,9 @@ public class ArticleListActivity extends AppCompatActivity implements
                         + mCursor.getString(ArticleLoader.Query.AUTHOR));
             }
 
+            holder.thumbnailView.setImageUrl(
+                    mCursor.getString(ArticleLoader.Query.THUMB_URL),
+                    ImageLoaderHelper.getInstance(ArticleListActivity.this).getImageLoader());
 
             ImageLoaderHelper.getInstance(getApplicationContext()).getImageLoader()
                     .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
@@ -206,9 +209,6 @@ public class ArticleListActivity extends AppCompatActivity implements
                                     }
                                 });
 
-                                holder.thumbnailView.setImageUrl(
-                                        mCursor.getString(ArticleLoader.Query.THUMB_URL),
-                                        ImageLoaderHelper.getInstance(ArticleListActivity.this).getImageLoader());
 
                                 holder.thumbnailView.setImageBitmap(imageContainer.getBitmap());
 
